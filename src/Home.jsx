@@ -113,7 +113,7 @@ const Home = () => {
 
   return (
     <div className="bg-white font-sans text-gray-800 antialiased overflow-x-hidden relative">
-      {/* Sticky Navigation - FIXED POSITIONING */}
+      {/* Sticky Navigation */}
       <header 
         className={`fixed w-full top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled 
@@ -187,13 +187,13 @@ const Home = () => {
             </button>
           </div>
 
-          {/* Mobile Menu */}
+          {/* Mobile Menu - FIXED: Same background as laptop, removed dark overlay */}
           <div 
             className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
               isMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
             }`}
           >
-            <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-2">
+            <div className="bg-white/95 backdrop-blur-md rounded-xl shadow-lg border border-gray-100 p-2">
               <nav className="flex flex-col">
                 {[
                   { id: 'home', label: 'Home', icon: FiTarget },
@@ -238,9 +238,8 @@ const Home = () => {
 
       {/* Main Content - Added proper padding top to account for fixed navbar */}
       <main className="pt-20">
-        {/* Hero Section - REMOVED BACKGROUND IMAGE */}
+        {/* Hero Section */}
         <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-br from-gray-50 to-white overflow-hidden">
-          {/* REMOVED: <div className="absolute inset-0 bg-[url('...')] bg-cover bg-center opacity-5"></div> */}
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="space-y-6 sm:space-y-8">
@@ -276,7 +275,7 @@ const Home = () => {
                   
                   <button
                     onClick={() => scrollToSection('gallery')}
-                    className="px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-black text-sm sm:text-base font-semibold rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-white text-sm sm:text-base font-semibold rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
                   >
                     View Gallery
                   </button>
