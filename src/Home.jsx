@@ -112,16 +112,16 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-white font-sans text-gray-800 antialiased overflow-x-hidden relative">
+    <div className="bg-white  text-gray-800 antialiased overflow-x-hidden relative">
       {/* Sticky Navigation */}
       <header 
-        className={`fixed w-full top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed w-full  top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled 
             ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' 
             : 'bg-white/80 backdrop-blur-sm py-3'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto  sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div 
@@ -190,7 +190,7 @@ const Home = () => {
           {/* Mobile Menu - FIXED: Same background as laptop, removed dark overlay */}
           <div 
             className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
-              isMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
+              isMenuOpen ? 'h-fit opacity-100 mt-4' : 'max-h-0 opacity-0'
             }`}
           >
             <div className="bg-white/95 backdrop-blur-md rounded-xl shadow-lg border border-gray-100 p-2">
@@ -275,7 +275,7 @@ const Home = () => {
                   
                   <button
                     onClick={() => scrollToSection('gallery')}
-                    className="px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-black text-sm sm:text-base font-semibold rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-white text-black text-sm sm:text-base font-semibold rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
                   >
                     View Gallery
                   </button>
@@ -655,9 +655,9 @@ const Home = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 sm:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <footer className="bg-gray-900 text-white ">
+        <div className="w-full">
+          <div className="grid grid-cols-1 md:grid-cols-4">
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-2xl sm:text-3xl font-bold mb-4">
                 <span className="text-white">BRSA</span>
