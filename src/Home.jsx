@@ -186,7 +186,7 @@ const Home = () => {
             </button>
           </div>
 
-          {/* Mobile Menu */}
+          {/* Mobile Menu - FIXED: Removed dark background */}
           <div 
             className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
               isMenuOpen ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0'
@@ -210,7 +210,7 @@ const Home = () => {
                     className={`w-full flex items-center space-x-3 px-4 py-3 transition-colors duration-200 ${
                       activeSection === item.id
                         ? 'text-orange-600 bg-orange-50'
-                        : 'text-gray-700 active:bg-gray-50'
+                        : 'text-gray-700 hover:bg-gray-50'
                     }`}
                   >
                     <Icon className="w-4 h-4" />
@@ -311,7 +311,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* About Section */}
+        {/* About Section - Updated with your content */}
         <section id="about" className="py-16 bg-gray-50 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
@@ -319,38 +319,20 @@ const Home = () => {
               <div className="w-16 h-1 bg-gradient-to-r from-orange-600 to-orange-400 mx-auto rounded-full"></div>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4">
-                <p className="text-lg sm:text-xl text-gray-700 italic font-light">
-                  "Bangalore Rifle Shooters Arena (BRSA) is dedicated to promoting the sport of shooting."
+            <div className="max-w-3xl mx-auto">
+              <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100">
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Located in the heart of Bangalore at Nagarabhaavi, BRSA offers world-class shooting facilities with professional coaching. We are affiliated with the Karnataka State Rifle Association and provide comprehensive training for shooters of all levels.
                 </p>
-                
-                <div className="bg-white p-6 rounded-xl shadow-sm">
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    Located in Nagarabhaavi, BRSA offers world-class shooting facilities with professional coaching. Affiliated with the Karnataka State Rifle Association.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-3">
-                {[
-                  { value: '2020', label: 'Established', icon: FiClock },
-                  { value: '4', label: 'Lanes', icon: FiTarget },
-                  { value: '5+', label: 'Coaches', icon: FiUsers },
-                  { value: '1000+', label: 'Sessions', icon: FiActivity }
-                ].map((stat, index) => (
-                  <div key={index} className="bg-white p-4 rounded-xl text-center shadow-sm">
-                    <stat.icon className="w-6 h-6 text-orange-600 mx-auto mb-1" />
-                    <div className="text-lg font-bold text-gray-900">{stat.value}</div>
-                    <div className="text-xs text-gray-500">{stat.label}</div>
-                  </div>
-                ))}
+                <p className="text-gray-700 leading-relaxed">
+                  Our academy features state-of-the-art electronic targets, professional coaching staff, and a supportive environment for both recreational shooters and competitive athletes aiming for state and national level competitions.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Sport Section */}
+        {/* The Sport Section */}
         <section id="sport" className="py-16 bg-white px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
@@ -390,7 +372,7 @@ const Home = () => {
         <section id="facilities" className="py-16 bg-gray-50 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-black mb-3 text-gray-900">Our Facilities</h2>
+              <h2 className="text-3xl sm:text-4xl font-black mb-3 text-gray-900">Facilities</h2>
               <div className="w-16 h-1 bg-gradient-to-r from-orange-600 to-orange-400 mx-auto rounded-full"></div>
             </div>
 
@@ -400,7 +382,7 @@ const Home = () => {
                 { icon: GiTargetArrows, title: "Competition Equipment" },
                 { icon: BiDumbbell, title: "Fitness Area" },
                 { icon: FiDroplet, title: "Equipment Support" },
-                { icon: FiCamera, title: "Video Analysis" },
+                { icon: FiCamera, title: "Electronic Targets" },
                 { icon: FiHeart, title: "Safety First" },
                 { icon: FiUsers, title: "Changing Rooms" },
                 { icon: FiMapPin, title: "Parking Available" },
@@ -548,7 +530,7 @@ const Home = () => {
         <section id="contact" className="py-16 bg-white px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-black mb-3 text-gray-900">Visit BRSA</h2>
+              <h2 className="text-3xl sm:text-4xl font-black mb-3 text-gray-900">Contact</h2>
               <div className="w-16 h-1 bg-gradient-to-r from-orange-600 to-orange-400 mx-auto rounded-full"></div>
             </div>
 
@@ -618,6 +600,14 @@ const Home = () => {
             <p className="text-xs text-gray-400 max-w-md mx-auto">
               Bangalore Rifle Shooters Arena - Professional shooting sports training in Bangalore.
             </p>
+          </div>
+          
+          <div className="flex justify-center space-x-4 mb-4">
+            {[FiTarget, FiUsers, FiAward].map((Icon, index) => (
+              <div key={index} className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors cursor-pointer">
+                <Icon className="w-4 h-4 text-gray-400 hover:text-white" />
+              </div>
+            ))}
           </div>
           
           <div className="text-center text-xs text-gray-500 pt-4 border-t border-gray-800">
