@@ -275,7 +275,7 @@ const Home = () => {
                   
                   <button
                     onClick={() => scrollToSection('gallery')}
-                    className="px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-white text-sm sm:text-base font-semibold rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 sm:px-8 py-3 sm:py-4 bg-gray-900 text-black text-sm sm:text-base font-semibold rounded-full hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
                   >
                     View Gallery
                   </button>
