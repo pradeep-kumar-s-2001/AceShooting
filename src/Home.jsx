@@ -935,12 +935,7 @@ const Home = () => {
                             +91 97395 65677
                           </a>
                         </div>
-                        <div className="flex items-center space-x-2">
-                          <FiMail className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
-                          <a href="mailto:info@brsa.in" className="text-sm sm:text-base text-gray-600 hover:text-green-600 transition">
-                            info@brsa.in
-                          </a>
-                        </div>
+                        
                       </div>
                     </div>
 
