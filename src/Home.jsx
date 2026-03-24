@@ -375,6 +375,14 @@ const Home = () => {
                   <FiMessageCircle className="w-4 h-4" />
                   <span>WhatsApp</span>
                 </a>
+                 <a
+                  href="https://www.instagram.com/blr_shootersacademy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 xl:px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-lg transition-all duration-300 flex items-center space-x-1 whitespace-nowrap"
+                >
+                   <FiInstagram className="w-4 h-4 text-white-400 hover:text-white" />
+                </a>
               </div>
             </nav>
 
@@ -446,6 +454,16 @@ const Home = () => {
                     <FiMessageCircle className="w-5 h-5" />
                     <span>Enquire on WhatsApp</span>
                   </a>
+                  <a
+                    href="https://www.instagram.com/blr_shootersacademy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full px-4 py-3 bg-green-500 text-white text-base font-semibold rounded-lg flex items-center justify-center space-x-2"
+                  >
+                     <FiInstagram className="w-4 h-4 text-white-400 hover:text-white" />
+                   <span>Vist Our Page on Instagram</span>
+                  </a>
+                   
                 </div>
               </nav>
             </div>
@@ -568,7 +586,7 @@ const Home = () => {
                     { value: '2016', label: 'Established', icon: FiClock },
                     { value: '8', label: 'Manual Lanes', icon: FiTarget },
                     { value: '5', label: 'Electronic Lanes', icon: FiTarget },
-                    { value: '1+', label: 'Expert Coaches', icon: FiUsers },
+                    { value: '3+', label: 'Expert Coaches', icon: FiUsers },
                     { value: '75+', label: 'State Medals', icon: FiAward },
                     { value: '25+', label: 'National Medals', icon: FiAward }
                   ].map((stat, index) => (
@@ -845,8 +863,8 @@ const Home = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 md:p-4">
-                        <p className="text-white text-xs sm:text-sm font-semibold truncate">{image.title}</p>
-                        <p className="text-green-400 text-[10px] sm:text-xs">{image.category}</p>
+                       
+                       
                       </div>
                     </div>
                   </div>
@@ -993,10 +1011,7 @@ const Home = () => {
                 </p>
                 <div className="flex space-x-3">
                  
-                  <a href="https://www.instagram.com/blr_shootersacademy/" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300">
-                    <FiInstagram className="w-4 h-4 text-green-400 hover:text-white" />
-                  </a>
-                 
+                  
                 </div>
               </div>
 
