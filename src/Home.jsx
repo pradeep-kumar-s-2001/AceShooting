@@ -71,6 +71,30 @@ import image37 from '../src/assets/image37.jpeg';
 import image38 from '../src/assets/image38.jpeg';
 import image39 from '../src/assets/image39.jpeg';
 import image40 from '../src/assets/image40.jpeg';
+import image41 from '../src/assets/image41.jpeg';
+import image42 from '../src/assets/image42.jpeg';
+import image43 from '../src/assets/image43.jpeg';
+import image44 from '../src/assets/image44.jpeg';
+import image45 from '../src/assets/image45.jpeg';
+import image46 from '../src/assets/image46.jpeg';
+import image47 from '../src/assets/image47.jpeg';
+import image48 from '../src/assets/image48.jpeg';
+import testi1 from '../src/assets/testi1.jpeg';
+import testi2 from '../src/assets/testi2.jpeg';
+import testi3 from '../src/assets/testi3.jpeg';
+
+
+import display1 from '../src/assets/display1.jpeg.jpeg';
+import display2 from '../src/assets/display2.jpeg.jpeg';
+import display3 from '../src/assets/display3.jpeg.jpeg';
+import display4 from '../src/assets/display4.jpeg.jpeg';
+import display5 from '../src/assets/display5.jpeg.jpeg';
+import display6 from '../src/assets/display6.jpeg.jpeg';
+import display7 from '../src/assets/display7.jpeg.jpeg';
+import display8 from '../src/assets/display8.jpeg.jpeg';
+import display9 from '../src/assets/display9.jpeg.jpeg';
+import display10 from '../src/assets/display10.jpeg.jpeg';
+import display11 from '../src/assets/display11.jpeg.jpeg';
 
 // Create an array with all images
 
@@ -126,18 +150,41 @@ const Home = () => {
   { id: 38, src: image38, title: 'Facilities 12', category: 'Facilities' },
   { id: 39, src: image39, title: 'Training Session 15', category: 'Training' },
   { id: 40, src: image40, title: 'Competition 13', category: 'Competition' },
+   { id: 41, src: image41, title: 'Competition 13', category: 'Competition' },
+    { id: 42, src: image42, title: 'Competition 13', category: 'Competition' },
+     { id: 43, src: image43, title: 'Competition 13', category: 'Competition' },
+      { id: 44, src: image44, title: 'Competition 13', category: 'Competition' },
+       { id: 45, src: image45, title: 'Competition 13', category: 'Competition' },
+        { id: 46, src: image46, title: 'Competition 13', category: 'Competition' },
+         { id: 47, src: image47, title: 'Competition 13', category: 'Competition' },
+          { id: 48, src: image48, title: 'Competition 13', category: 'Competition' },
+           
+           
+
+  
 ];
 
   const slideImages = [
-    { id: 1, src: image1, title: 'Training Session' },
-    { id: 2, src: image2, title: 'Practice Session' },
-    { id: 3, src: image3, title: 'Competition' },
-     { id: 4, src: image5, title: 'Competition' },
-      { id: 5, src: image6, title: 'Competition' },
-       { id: 6, src: image7, title: 'Competition' },
-        { id: 7, src: image8, title: 'Competition' },
-   
-  ];
+  { id: 1, src: display9, title: 'Display Image 9' },
+  { id: 2, src: image1, title: 'Training Session' },
+  { id: 3, src: image2, title: 'Practice Session' },
+
+  { id: 4, src: image8, title: 'Competition' },
+  { id: 5, src: image16, title: 'Competition' },
+
+  // Display images
+  { id: 6, src: display1, title: 'Display Image 1' },
+  { id: 7, src: display2, title: 'Display Image 2' },
+  { id: 8, src: display3, title: 'Display Image 3' },
+  { id: 9, src: display4, title: 'Display Image 4' },
+  { id: 10, src: display5, title: 'Display Image 5' },
+  { id: 11, src: display6, title: 'Display Image 6' },
+  { id: 12, src: display7, title: 'Display Image 7' },
+  { id: 13, src: display8, title: 'Display Image 8' },
+   { id: 14, src: image7, title: 'Competition' },
+  { id: 15, src: display10, title: 'Display Image 10' },
+  { id: 16, src: display11, title: 'Display Image 11' },
+];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -149,45 +196,42 @@ const Home = () => {
   const playerTestimonials = [
     {
       id: 1,
-      name: "Rajesh Kumar",
+      name: "K. Venkata Krishnan",
       achievement: "State Gold Medalist 2024",
-      image: image5,
-      quote: "BRSA's training methodology and expert coaches helped me achieve my first state medal. The facilities are world-class!"
+      image: testi1,
+      quote: "At BRSA, Coach is super supportive, friendly, and takes the time to guide one properly - a great spot for beginners to kick things off! in 🔫"
     },
     {
       id: 2,
-      name: "Priya Sharma",
+      name: "Partha Naresh",
       achievement: "National Bronze Medalist",
-      image: image6,
-      quote: "The personalized attention and video analysis at BRSA transformed my technique. Grateful to be part of this academy."
+      image: testi2,
+      quote: "Hi team BRSA, just wanted to share my experience with the shooters academy - the coach is skilled and super patient and supportive. The training sessions are top-notch! 👍 Really helped my son to improve his aim and confidence. The facilities are well-maintained and equipment is modern. Plus, the community vibe is awesome - more than anything management is very responsible and approachable. Feels like a big shooting family 😊. Highly recommend!"
     },
     {
       id: 3,
-      name: "Arjun Patel",
+      name: "Rahul K",
       achievement: "Junior National Competitor",
-      image: image7,
-      quote: "Started as a beginner, now competing at national level. BRSA's foundation courses are perfect for newcomers."
+      image: testi3,
+      quote: "Bangalore Rifle Shooting Arena has been an incredible experience for my shooting journey. The academy provides a highly professional and supportive environment for anyone interested in shooting sports.One of the standout aspects is the coach’s expertise and dedication. The coach is extremely skilled and focuses on training each individual with great attention to detail. The one-on-one personal guidance really helps in improving technique, confidence, and overall performance. Every session feels productive and tailored to my progress.The ambience of the academy is another major highlight. It is calm, well-maintained, and perfectly suited for focus and discipline, which are essential in a sport like rifle shooting and pistol shooting . The peaceful environment allows for better concentration and learning."
     }
   ];
 
   const newsUpdates = [
     {
       id: 1,
-      title: "Summer Camp 2024 Announcement",
-      date: "March 15, 2024",
-      description: "Register now for our intensive summer shooting camp starting April 15th. Limited seats available!"
+      title: "Summer Camp  Announcement",
+      description: "Summer camp March 15th - May 30th every year"
     },
     {
       id: 2,
-      title: "State Championship Results",
-      date: "March 10, 2024",
-      description: "Our shooters brought home 5 gold and 3 silver medals from the State Championships!"
+      title: "Upcoming competition",
+      description: "24th KSS 2026 Rifle & Pistol Championship"
     },
     {
       id: 3,
       title: "New Batch Starting",
-      date: "March 5, 2024",
-      description: "Beginner foundation course starting April 1st. Enroll now to start your shooting journey."
+      description: "New batch starts every month"
     }
   ];
 
@@ -524,7 +568,7 @@ const Home = () => {
                     { value: '2016', label: 'Established', icon: FiClock },
                     { value: '8', label: 'Manual Lanes', icon: FiTarget },
                     { value: '5', label: 'Electronic Lanes', icon: FiTarget },
-                    { value: '3+', label: 'Expert Coaches', icon: FiUsers },
+                    { value: '1+', label: 'Expert Coaches', icon: FiUsers },
                     { value: '75+', label: 'State Medals', icon: FiAward },
                     { value: '25+', label: 'National Medals', icon: FiAward }
                   ].map((stat, index) => (
@@ -625,7 +669,7 @@ const Home = () => {
               <div className="text-center mb-8 sm:mb-12 md:mb-16">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 text-gray-900">Coaching Programs</h2>
                 <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto rounded-full"></div>
-                <p className="text-base sm:text-lg mt-4 text-gray-600">3+ Expert Coaches • Personalized Training</p>
+                <p className="text-base sm:text-lg mt-4 text-gray-600">1+ Expert Coaches • Personalized Training</p>
               </div>
 
               <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 mb-8">
@@ -646,7 +690,7 @@ const Home = () => {
                     </div>
                     <div className="flex items-start space-x-2 sm:space-x-3">
                       <FiChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm sm:text-base text-gray-700">Annual Membership - Advanced & Professional Training</span>
+                      <span className="text-sm sm:text-base text-gray-700">Annual Membership</span>
                     </div>
                     <div className="flex items-start space-x-2 sm:space-x-3">
                       <FiChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -690,39 +734,57 @@ const Home = () => {
           </section>
 
           {/* Testimonials Section */}
+          
           <section id="testimonials" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-8 sm:mb-12 md:mb-16">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 text-gray-900">Player Experiences</h2>
-                <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto rounded-full"></div>
-                <p className="text-base sm:text-lg mt-4 text-gray-600">What our shooters say about BRSA</p>
-              </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-8 sm:mb-12 md:mb-16">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 text-gray-900">Player Experiences</h2>
+      <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto rounded-full"></div>
+      <p className="text-base sm:text-lg mt-4 text-gray-600">What our shooters say about BRSA</p>
+    </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {playerTestimonials.map((testimonial) => (
-                  <div key={testimonial.id} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <img
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-green-600"
-                      />
-                      <div>
-                        <h3 className="font-bold text-gray-900 text-sm sm:text-base">{testimonial.name}</h3>
-                        <p className="text-xs sm:text-sm text-green-600">{testimonial.achievement}</p>
-                      </div>
-                    </div>
-                    <p className="text-gray-600 italic text-sm sm:text-base">"{testimonial.quote}"</p>
-                    <div className="mt-4 flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <FiHeart key={i} className="w-4 h-4 fill-current" />
-                      ))}
-                    </div>
-                  </div>
-                ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {playerTestimonials.map((testimonial) => {
+        const [expanded, setExpanded] = React.useState(false);
+        const isLong = testimonial.quote.length > 100;
+        
+        return (
+          <div key={testimonial.id} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="flex items-center space-x-4 mb-4">
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-green-600"
+              />
+              <div>
+                <h3 className="font-bold text-gray-900 text-sm sm:text-base">{testimonial.name}</h3>
               </div>
             </div>
-          </section>
+            
+            <p className="text-gray-600 italic text-sm sm:text-base">
+              "{expanded || !isLong ? testimonial.quote : testimonial.quote.substring(0, 100) + '...'}"
+            </p>
+            
+            {isLong && (
+              <button 
+                onClick={() => setExpanded(!expanded)}
+                className="text-green-600 text-sm mt-2 hover:text-green-700 font-medium"
+              >
+                {expanded ? 'Show less' : 'Read more'}
+              </button>
+            )}
+            
+            <div className="mt-4 flex text-yellow-400">
+              {[...Array(5)].map((_, i) => (
+                <FiHeart key={i} className="w-4 h-4 fill-current" />
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
 
           {/* News and Updates Section */}
           <section id="news" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
@@ -736,25 +798,19 @@ const Home = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {newsUpdates.map((news) => (
                   <div key={news.id} className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow duration-300">
-                    <div className="flex items-center space-x-2 text-sm text-green-600 mb-3">
-                      <FiClock className="w-4 h-4" />
-                      <span>{news.date}</span>
-                    </div>
+                    
                     <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900">{news.title}</h3>
                     <p className="text-sm sm:text-base text-gray-600">{news.description}</p>
-                    <button className="mt-4 text-green-600 font-semibold hover:text-green-700 transition-colors duration-300 flex items-center space-x-1">
-                      <span>Read More</span>
-                      <FiChevronRight className="w-4 h-4" />
-                    </button>
+                    
                   </div>
                 ))}
               </div>
 
               <div className="mt-8 bg-gradient-to-r from-green-600 to-green-500 rounded-2xl p-6 sm:p-8 text-white text-center">
-                <h3 className="text-xl sm:text-2xl font-bold mb-2">Summer Camp 2024</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">Summer Camp 2026</h3>
                 <p className="text-base sm:text-lg mb-4">Registration Open Now! Limited Seats Available</p>
                 <a
-                  href="https://wa.me/919739565677?text=Hi%20BRSA%2C%20I'm%20interested%20in%20the%20Summer%20Camp%202024"
+                  href="https://wa.me/919739565677?text=Hi%20BRSA%2C%20I'm%20interested%20in%20the%20Summer%20Camp%20"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 bg-white text-green-600 px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base"
@@ -941,15 +997,11 @@ const Home = () => {
                   Premier shooting academy in Bangalore providing world-class training facilities and expert coaching for shooters of all levels.
                 </p>
                 <div className="flex space-x-3">
-                  <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300">
-                    <FiFacebook className="w-4 h-4 text-gray-400 hover:text-white" />
-                  </a>
-                  <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300">
+                 
+                  <a href="https://www.instagram.com/blr_shootersacademy/" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300">
                     <FiInstagram className="w-4 h-4 text-gray-400 hover:text-white" />
                   </a>
-                  <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300">
-                    <FiYoutube className="w-4 h-4 text-gray-400 hover:text-white" />
-                  </a>
+                 
                 </div>
               </div>
 
@@ -1015,12 +1067,7 @@ const Home = () => {
                       +91 97395 65677
                     </a>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <FiMail className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <a href="mailto:info@brsa.in" className="text-sm text-gray-400 hover:text-green-500 transition-colors duration-300">
-                      info@brsa.in
-                    </a>
-                  </div>
+                  
                 </div>
               </div>
 
@@ -1061,7 +1108,7 @@ const Home = () => {
             <div className="border-t border-gray-800 mt-8 pt-6">
               <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
                 <p className="text-xs sm:text-sm text-gray-500 text-center md:text-left">
-                  © 2024 Bangalore Rifle Shooters Arena (BRSA). All rights reserved.
+                  © 2026 Bangalore Rifle Shooters Arena (BRSA). All rights reserved.
                 </p>
                 <p className="text-xs text-gray-600 text-center md:text-right">
                   Affiliated to Karnataka State Rifle Association
