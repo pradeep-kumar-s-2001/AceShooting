@@ -585,44 +585,44 @@ const Home = () => {
 
           {/* The Sport Section */}
           <section id="sport" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-8 sm:mb-12 md:mb-16">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 text-gray-900">The Sport</h2>
-                <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto rounded-full mb-4 sm:mb-6"></div>
-                <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-                  10 meter air rifle and pistol shooting is an <span className="font-semibold text-green-600">ISSF recognized Olympic level event</span>, shot over a distance of 10 meters from a standing position with a 4.5 mm caliber air gun.
-                </p>
-              </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-8 sm:mb-12 md:mb-16">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 text-gray-900">The Sport</h2>
+      <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-green-600 to-green-400 mx-auto rounded-full mb-4 sm:mb-6"></div>
+      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        10 meter air rifle and pistol shooting is an <span className="font-semibold text-green-600">ISSF recognized Olympic level event</span>, shot over a distance of 10 meters from a standing position with a 4.5 mm caliber air gun.
+      </p>
+    </div>
 
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-12 text-gray-900">
-                Benefits of Taking Up Shooting
-              </h3>
+    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8 md:mb-12 text-gray-900">
+      Benefits of Taking Up Shooting
+    </h3>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-                {[
-                  { icon: BiBody, title: "Physical Discipline", desc: "Builds strength, stamina, and fine motor skills" },
-                  { icon: GiWeightLiftingUp, title: "Arm Strength", desc: "Develops strong arms for steady aiming" },
-                  { icon: FiZap, title: "Natural Adrenaline", desc: "Enhances focus and energy" },
-                  { icon: BiBrain, title: "Mental Focus", desc: "Sharpens concentration" },
-                  { icon: FiActivity, title: "Physical Balance", desc: "Strengthens core for stability" },
-                  { icon: FiEye, title: "Eye Health", desc: "Exercises eye capabilities" },
-                  { icon: FiUserCheck, title: "Personal Responsibility", desc: "Builds confidence and safety" },
-                  { icon: FiTrendingUp, title: "Mental Discipline", desc: "90% mental - builds toughness" }
-                ].map((benefit, index) => {
-                  const Icon = benefit.icon;
-                  return (
-                    <div key={index} className="group bg-gray-50 p-4 sm:p-6 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-green-600 transition-colors duration-300">
-                        <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 group-hover:text-white transition-colors duration-300" />
-                      </div>
-                      <h4 className="text-base sm:text-lg font-bold mb-1 sm:mb-2 text-gray-900">{benefit.title}</h4>
-                      <p className="text-xs sm:text-sm text-gray-600">{benefit.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      {[
+        { icon: BiBody, title: "Physical Discipline", desc: "Builds strength, stamina, and fine motor skills" },
+        { icon: GiWeightLiftingUp, title: "Arm Strength", desc: "Develops strong arms for steady aiming" },
+        { icon: FiZap, title: "Natural Adrenaline", desc: "Enhances focus and energy" },
+        { icon: BiBrain, title: "Mental Focus", desc: "Sharpens concentration" },
+        { icon: FiActivity, title: "Physical Balance", desc: "Strengthens core for stability" },
+        { icon: FiEye, title: "Eye Health", desc: "Exercises eye capabilities" },
+        { icon: FiUserCheck, title: "Personal Responsibility", desc: "Builds confidence and safety" },
+        { icon: FiTrendingUp, title: "Mental Discipline", desc: "90% mental - builds toughness" }
+      ].map((benefit, index) => {
+        const Icon = benefit.icon;
+        return (
+          <div key={index} className="group bg-gray-50 p-4 sm:p-6 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-green-600 transition-colors duration-300 mx-auto sm:mx-0">
+              <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 group-hover:text-white transition-colors duration-300" />
             </div>
-          </section>
+            <h4 className="text-base sm:text-lg font-bold mb-1 sm:mb-2 text-gray-900 text-center sm:text-left">{benefit.title}</h4>
+            <p className="text-xs sm:text-sm text-gray-600 text-center sm:text-left">{benefit.desc}</p>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
 
           {/* Facilities Section */}
           <section id="facilities" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50">
@@ -999,7 +999,7 @@ const Home = () => {
                 <div className="flex space-x-3">
                  
                   <a href="https://www.instagram.com/blr_shootersacademy/" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300">
-                    <FiInstagram className="w-4 h-4 text-gray-400 hover:text-white" />
+                    <FiInstagram className="w-4 h-4 text-green-400 hover:text-white" />
                   </a>
                  
                 </div>
@@ -1049,27 +1049,26 @@ const Home = () => {
               </div>
 
               {/* Address & Contact */}
-              <div>
-                <h4 className="text-base sm:text-lg font-bold mb-4 text-white">Visit Us</h4>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <FiMapPin className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                    <div className="text-sm text-gray-400 leading-relaxed">
-                      <p>NO 23, BSVP College Campus</p>
-                      <p>7th Cross, 3rd Block, BDA Layout</p>
-                      <p>Nagarabhaavi, Bengaluru</p>
-                      <p>Karnataka - 560072</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <FiPhone className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <a href="tel:919739565677" className="text-sm text-gray-400 hover:text-green-500 transition-colors duration-300">
-                      +91 97395 65677
-                    </a>
-                  </div>
-                  
-                </div>
-              </div>
+              <div className="text-left">
+  <h4 className="text-base sm:text-lg font-bold mb-4 text-white">Visit Us</h4>
+  <div className="space-y-3">
+    <div className="flex items-start space-x-3">
+      <FiMapPin className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+      <div className="text-sm text-gray-400 leading-relaxed text-left">
+        <p>NO 23, BSVP College Campus</p>
+        <p>7th Cross, 3rd Block, BDA Layout</p>
+        <p>Nagarabhaavi, Bengaluru</p>
+        <p>Karnataka - 560072</p>
+      </div>
+    </div>
+    <div className="flex items-center space-x-3">
+      <FiPhone className="w-5 h-5 text-green-500 flex-shrink-0" />
+      <a href="tel:919739565677" className="text-sm text-gray-400 hover:text-green-500 transition-colors duration-300">
+        +91 97395 65677
+      </a>
+    </div>
+  </div>
+</div>
 
               {/* Opening Hours & Quick Contact */}
               <div>
