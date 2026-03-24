@@ -915,10 +915,7 @@ const Home = () => {
                 >
                   <FiX className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </button>
-                <div className="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 bg-black/50 backdrop-blur-sm p-2 sm:p-4 rounded-lg">
-                  <h3 className="text-white text-sm sm:text-base md:text-lg font-bold">{selectedImage.title}</h3>
-                  <p className="text-green-400 text-xs sm:text-sm">{selectedImage.category}</p>
-                </div>
+                
               </div>
             </div>
           )}
